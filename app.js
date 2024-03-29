@@ -7,7 +7,7 @@ taskForm.addEventListener("submit", function(event){
     event.preventDefault();
 
     const taskInput =document.getElementById("task-input");
-    const taskText = taskInput.Value.trim();
+    const taskText = taskInput.value.trim();
 
     // console.log(taskText);
 
@@ -25,6 +25,6 @@ taskForm.addEventListener("submit", function(event){
 
         taskList.appendChild(taskItem);
 
-        taskInput.Value = "";
+        taskInput.value= "";
     }
 });
