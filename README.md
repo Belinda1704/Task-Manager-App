@@ -30,6 +30,11 @@ Hello, this is a simple task manager web application built using HTML, CSS and J
 
   Contributions are welcome! if you have any suggestions or improvements, please open an issue or submit a pull request.
 
+  ### Dockerfile
+    
+    - Base Image: The nginx:alpine image is a lightweight image based on Alpine Linux, which is commonly used for serving web content. It includes the Nginx web server.
+
+    - Copy Files: The COPY instructions copy the index.html, styles.css, and script.js files from your host machine into the /usr/share/nginx/html/ directory inside the container. These files are typically served by the Nginx web server.
   ### References
 
    - [101touchapps]. (2022, October 15). How to create a readme file in vs code [Video]. 101touchapps. https://www.youtube.com/watch?v=jeOfS90Flf8
