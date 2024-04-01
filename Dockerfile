@@ -1,15 +1,10 @@
-FROM node:12
+# Use a lightweight base image
+FROM nginx:alpine
 
-WORKDIR /app
+# Copy the web application files into the container
+COPY index.html /usr/share/nginx/html/
+COPY styles.css /usr/share/nginx/html/
+COPY script.js /usr/share/nginx/html/
 
-COPY index.html ./
-
-RUN npm install
-
-COPY . .
-
-ENV PORT=8080
-
-EXPOSE 8080
-
-CMD [ "npm", "start" ]
+# Expose port 80
+EXPOSE 80
